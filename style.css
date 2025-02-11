@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,19 +9,30 @@
 
 body{
     background-color: hsl(0, 0%, 8%);
-    
+    font-family: "Roboto Serif", serif;
+    font-size: 14px;
+    max-width: 980px;
+    margin: 3rem;
+    padding: 1.5rem;
 
     
 }
 .container{
+    
     display:flex;
     flex-direction: column;
-    
+    width: 100%;
     color: #fff;
-    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 100%;
 
 }
 .profile {
@@ -53,15 +66,65 @@ body{
    background-color: hsl(0, 0%, 12%);
    border: 2px solid black;
    padding: 20px;
-   color: aqua;
+   
    font-size: 20px;
    margin: 10px;
    border-radius: 10px;
    text-align: center;
    
 }
+.link a{
+    color: aqua;
+    text-decoration: none;
+
+}
+.link a:hover{
+    color: darkgray;
+}
 .attribution{
     margin-top: 20px;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
+    margin-bottom: 3px;
+}
+
+@media (min-width:280px){
+    .container{
+        max-width: 280px;
+        
+    }
+    
+}
+
+@media (min-width:420px){
+    .container{
+        max-width: 420px;
+    }
+    
+}
+
+@media (min-width:560px){
+    .container{
+        max-width: 560px;
+    }
+    
+}
+
+@media (min-width:700px){
+    .container{
+        max-width: 700px;
+    }
+    
+}
+@media (min-width:840px){
+    .container{
+        max-width: 840px;
+    }
+    
+}
+@media (min-width:980px){
+    .container{
+        max-width: 980px;
+    }
+    
 }
